@@ -1,0 +1,12 @@
+name: Automatic Model Retraining
+
+"on":
+workflow_dispatch:
+
+push:
+branches:
+- main
+
+jobs:
+retrain:
+runs-on: ubuntu-latest
